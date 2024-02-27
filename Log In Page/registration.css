@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+		body {
+			background-color: rgb(0, 103, 71);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Poppins", sans-serif;
+		}
+		
+		.wrapper {
+			width:420px;
+			border: 2px solid rgba(255, 255, 255, .2);
+			background-color: transparent;
+			backdrop-filter: blur(20px);
+			box-shadow: 0 0 10px rgba(0,0,0,.1);
+			color: #fff;
+			border-radius: 10px;
+			padding: 30px 40px;			
+		}
+		
+		.wrapper h1 {
+			font-size:36px;
+			text-align: center;
+		}
+		
+		.wrapper .input-box {
+			position: relative;
+			width: 100%;
+			height: 50px;
+			margin: 30px 0;
+		}
+		
+		
+		.input-box input{
+			width: 100%;
+			height: 100%;
+			background: transparent;
+			border: none;
+			outline: none;
+			border: 2px solid rgba(255, 255, 255, .2);
+			font-size: 16px;
+			color: #fff;
+			border-radius: 40px;
+			padding: 20px 45px 20px 20px
+		}
+		
+		.input-box input::placeholder{
+			color: #fff;
+		}
+		
+		.wrapper label {
+			display: inline-block;
+			font-size: 14.5px;
+			margin: 10px 0 23px;
+		}
+		
+		.wrapper label input {
+			color: #fff;
+			margin-right: 3px;
+		}
+		
+	    .wrapper .btn {
+			width: 100%;
+			height: 45px;
+			background: #fff;
+			border: none;
+			outline: none;
+			border-radius: 40px;
+			box-shadow: 0 0 10px rgba(0,0,0,.1);
+			cursor: pointer;
+			font-size: 16px;
+			color: #333;
+			font-weight: 600; 
+		}		
