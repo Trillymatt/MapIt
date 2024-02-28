@@ -1,7 +1,26 @@
+
+
 #map { height: 720px; }
 
 
 body{
 
     background-color: rgb(0, 103, 71); 
+}
+
+.input-class {
+    width: 25%;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 20px 45px 20px 20px;
+    border-bottom: 25px;
+}
+
+.input-class::placeholder{
+    color: grey;
 }
