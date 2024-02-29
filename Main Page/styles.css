@@ -1,10 +1,12 @@
 
 
-#map { height: 720px; }
+#map {
+    position: flex; 
+    height: 75rem; }
 
 
 body{
-
+    position:static;
     background-color: rgb(0, 103, 71); 
 }
 
