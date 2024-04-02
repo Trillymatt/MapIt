@@ -1,7 +1,3 @@
-import { Amplify } from 'aws-amplify';
-import config from './src/amplifyconfiguration.json';
-Amplify.configure(config);
-
 document.addEventListener("DOMContentLoaded", function() {
     var map = L.map('map').setView([33.2104, -97.1473], 17);
 
