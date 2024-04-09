@@ -2,11 +2,13 @@
 
 #map {
     position: flex; 
-    height: 75rem; }
+    height: 50rem; 
+    width: auto;
+}
 
 
 body{
-    position:static;
+    position: static;
     background-color: rgb(0, 103, 71); 
 }
 
@@ -25,4 +27,42 @@ body{
 
 .input-class::placeholder{
     color: grey;
+}
+
+.menu-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+    z-index: 1;
+    right: 10px;
+    top: 10px;
+}
+
+.menu-content ul li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.menu-content ul li a:hover{
+    background-color: rgb(0, 103, 71);
+
 }

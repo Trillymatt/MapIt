@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const menuContainer = document.querySelector('.menu-container');
+    const menuContent = document.querySelector('.menu-content');
+
+    menuContainer.addEventListener('mouseover', function(){
+        menuContent.style.display = 'block';
+    });
+
+    menuContainer.addEventListener('mouseout', function(){
+        menuContent.style.display = 'none';
+    });
+
     var map = L.map('map').setView([33.2104, -97.1473], 17);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -21,3 +32,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.menu-button');
+    const menuContent = document.querySelector('.menu-content');
+  
+    menuButton.onclick = function() {
+      if (menuContent.style.display === "block") {
+        menuContent.style.display = "none";
+      } else {
+        menuContent.style.display = "block";
+      }
+    }
+  });
+  
