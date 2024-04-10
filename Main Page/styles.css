@@ -96,5 +96,5 @@ body{
     background-position: center;
     background-color: rgb(0, 103, 71);
     border: none;
-
+    cursor: pointer;
 }
