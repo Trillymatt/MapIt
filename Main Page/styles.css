@@ -15,7 +15,12 @@
     height: 85vh;
 }
 
-
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    letter-spacing: .25rem;
+    font-style:oblique;
+}
 body{
     position: static;
     background-color: rgb(0, 103, 71); 
