@@ -23,12 +23,21 @@
             </div>
             <button type="submit" class="btn">Login</button>
         </form>
-        <button type="button" class="btn register" id="registerbtn"><a href="Register page/register.html">Register</a></button>
-        <button type="button" class="btn-guest" id="guestbtn"><a href="Main page/mapit.html">Continue as Guest</a></button>
+        <button type="button" class="btn register" id="registerbtn">Register</button>
+        <button type="button" class="btn-guest" id="guestbtn">Continue as Guest</button>
     </div>
     
-
+    <!--Guest and register button send to correct pages without being styled by links-->
     <script type="module" src="login.js"></script>
+    <script>
+        document.getElementById("registerbtn").addEventListener("click", function() {
+            window.location.href = "Register page/register.html";
+        });
+
+        document.getElementById("guestbtn").addEventListener("click", function() {
+            window.location.href = "Main page/mapit.html";
+        });
+    </script>
 </body>
 
 </html>
