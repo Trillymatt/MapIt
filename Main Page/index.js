@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
   buildings.set("LANG", [33.21406767682987, -97.14665440400988]);
   buildings.set("CVAD", [33.21319699426222, -97.14544204563157]);
   buildings.set("CHEM", [33.21413050925735, -97.15023783496879]);
+  buildings.set("WH", [33.209880233378215, -97.14575851124678]);
+  
 
   var inputs = document.getElementsByClassName("input-class");
   var buttons = document.getElementsByClassName("map-button");
