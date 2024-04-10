@@ -49,6 +49,12 @@ body{
     font-size: 16px;
     color: #fff;
     padding: 20px 45px 20px 20px;
+    transition: .2s ease-in-out;
+}
+
+.input-box input:hover {
+    border-color: #ffffff;
+    transition: .2s ease-in-out;
 }
 
 .input-box input::placeholder{
@@ -111,8 +117,8 @@ body{
     text-decoration: none;
     font-weight: 600;
 }
-.register-link p a:hover {
-    text-decoration: underline;
+.register-link:hover {
+    background-color:#333;
 }
 
 .register{

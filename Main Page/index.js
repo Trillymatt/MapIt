@@ -23,15 +23,31 @@ document.addEventListener("DOMContentLoaded", function() {
     buildings.set("BLB", [33.208923343929065, -97.14768127787393]);
     buildings.set("PHYS", [33.213146118569824, -97.14658036227581]);
 
-    var input = document.getElementsByClassName("input-class")[0]; 
-    input.addEventListener("input", function() {
-        if (buildings.has(input.value)) {
-            var coordinates = buildings.get(input.value);
-            L.marker(coordinates).addTo(map);
-            console.log(`Added marker successfully at ${input.value}`)
-        }
-    });
+    var inputs = document.getElementsByClassName("input-class"); 
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener("input", function() {
+            if (this.value === "") {
+                // Remove marker if input value is empty
+                map.eachLayer(function(layer) {
+                    if (layer instanceof L.Marker) {
+                        map.removeLayer(layer);
+                    }
+                });
+            } else if (buildings.has(this.value)) {
+                var coordinates = buildings.get(this.value);
+                // Remove existing markers before adding a new one
+                map.eachLayer(function(layer) {
+                    if (layer instanceof L.Marker) {
+                        map.removeLayer(layer);
+                    }
+                });
+                L.marker(coordinates).addTo(map);
+                console.log(`Added marker successfully at ${this.value}`);
+            }
+        });
+    }
 });
+
 
 // script.js
 document.addEventListener('DOMContentLoaded', function() {

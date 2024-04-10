@@ -1,9 +1,18 @@
 
 
+#header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(0, 103, 71);
+}
+
+#header form{
+    position:flex;
+}
+
 #map {
-    position: flex; 
-    height: 50rem; 
-    width: auto;
+    position:flex;
+    height: 85vh;
 }
 
 
@@ -13,7 +22,7 @@ body{
 }
 
 .input-class {
-    width: 25%;
+    width: 28%;
     background: rgba(0, 0, 0, .5);
     border: none;
     outline: none;
@@ -22,7 +31,12 @@ body{
     font-size: 16px;
     color: whitesmoke;
     padding: 20px 45px 20px 20px;
-    border-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+.input-class:hover {
+    border-color: #fff;
+    transition: .25s ease-in-out;
 }
 
 .input-class::placeholder{
@@ -48,7 +62,7 @@ body{
     background-color: #f9f9f9;
     min-width: 160px;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, .2);
     z-index: 1;
     right: 10px;
     top: 10px;
@@ -66,3 +80,4 @@ body{
     background-color: rgb(0, 103, 71);
 
 }
+

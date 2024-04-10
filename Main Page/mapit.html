@@ -4,7 +4,6 @@
   <head>
     <meta charset="UTF-8">
     <title>UNT MapIt!</title>
-    <h1>UNT MapIt</h1>
 
     <!-- Leaflet Code -->
 
@@ -20,26 +19,32 @@
 
     <link rel="stylesheet" href="styles.css"/>
     <script src="index.js"></script>
-  
-    <div class="menu-container">
-      <button class="menu-button">Menu</button>
-      <div class="menu-content">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Map</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
+    <div id="header">
+    <h1>UNT MapIt</h1>
+      <div class="menu-container">
+        <button class="menu-button">Menu</button>
+        <div class="menu-content">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <form>
+        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
+        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
+        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
+        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
+        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
+        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
+      </form>
+     </div>
 
   </head>
 
   <body>
 
-
-    <form>
-        <input type="text" class="input-class" placeholder="Class Number EX: GAB 325" >
-    </form>
 
     <div id="map"></div>
 
