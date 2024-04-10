@@ -22,7 +22,7 @@ body{
 }
 
 .input-class {
-    width: 28%;
+    width: 27%;
     background: rgba(0, 0, 0, .5);
     border: none;
     outline: none;
@@ -53,7 +53,7 @@ body{
     border-radius: 10px;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 0px;
 }
 
 .menu-content{
@@ -81,3 +81,15 @@ body{
 
 }
 
+.map-button{
+    height:40px;
+    width: 40px;
+    position:relative;
+    top: 1vh;
+    background-image: url(../Map_marker.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(0, 103, 71);
+    border: none;
+
+}
