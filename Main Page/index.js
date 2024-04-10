@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function() {
   buildings.set("NTDP", [33.253667671664694, -97.15253791766376]);
   buildings.set("BLB", [33.208923343929065, -97.14768127787393]);
   buildings.set("PHYS", [33.213146118569824, -97.14658036227581]);
+  buildings.set("LANG", [33.21406767682987, -97.14665440400988]);
+  buildings.set("CVAD", [33.21319699426222, -97.14544204563157]);
+  buildings.set("CHEM", [33.21413050925735, -97.15023783496879]);
 
   var inputs = document.getElementsByClassName("input-class");
   var buttons = document.getElementsByClassName("map-button");
